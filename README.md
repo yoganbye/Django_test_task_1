@@ -1,2 +1,5 @@
 # Django_test_task_1
-Создать Django-приложение в связке с PostgreSQL
+Логин/пароль админки: admin
+
+Задание:
+  Создать Django-приложение в связке с PostgreSQL.
