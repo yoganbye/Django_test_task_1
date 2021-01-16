@@ -19,5 +19,4 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('BC_core.urls')),
-    path('blocks/', include('BC_core.urls')),
 ]

@@ -1,0 +1,9 @@
+{% extends 'BC_core/layout.html' %}
+    {% block unique_content %}  
+        <p>Высота блока: {{ blocks.id }}</p>
+        <p>Хэш блока: {{ blocks.hash_block }}</p>
+        <p>Время блока: {{ blocks.time }}</p>
+        <p>Адрес майнера: {{ blocks.miner_address }}</p>
+        <p>Количество транзакций в блоке: {{ blocks.num_of_transaction }}</p>
+    
+    {% endblock unique_content %}
