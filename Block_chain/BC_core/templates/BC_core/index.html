@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>    
+    <table border="1">
+        <tr>
+            <th>Высота блока</th>
+            <th>Хэш блока</th>
+            <th>Время блока</th>
+            <th>Адрес майнера</th>
+            <th>Количество транзакций в блоке</th>
+        </tr>
+        {% for block in blocks %}
+            <tr>
+                <td>{{ block.id }}</td>
+                <td>{{ block.hash_block }}</td>
+                <td>{{ block.time }}</td>
+                <td>{{ block.miner_address }}</td>
+                <td>{{ block.num_of_transaction }}</td>
+            </tr>
+        {% endfor %}
+       
+        
+</body>
+</html>
