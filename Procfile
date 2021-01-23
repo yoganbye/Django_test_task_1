@@ -1,1 +1,0 @@
-web: gunicorn Block_chain.wsgi --log-file -
