@@ -27,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@b*t^n1uy)1j1*x+g98t5tp5lg=(zj_9@g8y#6ae0ma(&v3sec'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = bool(os.environ.get("DEBUG", False))
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1','.herokuapp.com', 'crmblock.herokuapp.com', '176.59.98.12']
 
